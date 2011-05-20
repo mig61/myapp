@@ -1,0 +1,43 @@
+<h1>Listing sales_people</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Zip</th>
+    <th>City</th>
+    <th>Didtrict</th>
+    <th>Phone number</th>
+    <th>Fax number</th>
+    <th>Email address</th>
+    <th>Skype</th>
+    <th>Region</th>
+    <th>Nation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sales_people.each do |sales_person| %>
+  <tr>
+    <td><%= sales_person.name %></td>
+    <td><%= sales_person.address %></td>
+    <td><%= sales_person.zip %></td>
+    <td><%= sales_person.city %></td>
+    <td><%= sales_person.didtrict %></td>
+    <td><%= sales_person.phone_number %></td>
+    <td><%= sales_person.fax_number %></td>
+    <td><%= sales_person.email_address %></td>
+    <td><%= sales_person.skype %></td>
+    <td><%= sales_person.region %></td>
+    <td><%= sales_person.nation %></td>
+    <td><%= link_to 'Show', sales_person %></td>
+    <td><%= link_to 'Edit', edit_sales_person_path(sales_person) %></td>
+    <td><%= link_to 'Destroy', sales_person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sales person', new_sales_person_path %>

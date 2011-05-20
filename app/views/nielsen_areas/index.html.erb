@@ -1,0 +1,25 @@
+<h1>Listing nielsen_areas</h1>
+
+<table>
+  <tr>
+    <th>Area code</th>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nielsen_areas.each do |nielsen_area| %>
+  <tr>
+    <td><%= nielsen_area.area_code %></td>
+    <td><%= nielsen_area.name %></td>
+    <td><%= link_to 'Show', nielsen_area %></td>
+    <td><%= link_to 'Edit', edit_nielsen_area_path(nielsen_area) %></td>
+    <td><%= link_to 'Destroy', nielsen_area, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nielsen area', new_nielsen_area_path %>

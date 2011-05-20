@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company name:</b>
+  <%= @customer.company_name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @customer.address %>
+</p>
+
+<p>
+  <b>Zip code:</b>
+  <%= @customer.zip_code %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @customer.city %>
+</p>
+
+<p>
+  <b>District:</b>
+  <%= @customer.district %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @customer.phone_number %>
+</p>
+
+<p>
+  <b>Fax number:</b>
+  <%= @customer.fax_number %>
+</p>
+
+<p>
+  <b>Email address:</b>
+  <%= @customer.email_address %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @customer.website %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%= @customer.region.name %>
+</p>
+
+<p>
+  <b>Nation:</b>
+  <%= @customer.nation.name %>
+</p>
+
+<p>
+  <b>Sales person:</b>
+  <%= @customer.sales_person.name %>
+</p>
+
+<p>
+  <b>Payment:</b>
+  <%= @customer.payment.name %>
+</p>
+
+<p>
+  <b>Vat:</b>
+  <%= @customer.vat %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

@@ -1,0 +1,24 @@
+<%= simple_form_for(@customer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :company_name %>
+    <%= f.input :address %>
+    <%= f.input :zip_code %>
+    <%= f.input :city %>
+    <%= f.input :district %>
+    <%= f.input :phone_number %>
+    <%= f.input :fax_number %>
+    <%= f.input :email_address %>
+    <%= f.input :website %>
+    <%= f.association :region %>
+    <%= f.association :nation %>
+    <%= f.association :sales_person %>
+    <%= f.association :payment %>
+    <%= f.association :vat %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

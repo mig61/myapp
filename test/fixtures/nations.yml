@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  iso_code: MyString
+  cee: false
+
+two:
+  name: MyString
+  iso_code: MyString
+  cee: false

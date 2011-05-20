@@ -1,0 +1,14 @@
+<%= simple_form_for(@vat) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :code %>
+    <%= f.input :name %>
+    <%= f.input :percentage %>
+    <%= f.input :type %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

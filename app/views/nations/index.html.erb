@@ -1,0 +1,27 @@
+<h1>Listing nations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Iso code</th>
+    <th>Cee</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nations.each do |nation| %>
+  <tr>
+    <td><%= nation.name %></td>
+    <td><%= nation.iso_code %></td>
+    <td><%= nation.cee %></td>
+    <td><%= link_to 'Show', nation %></td>
+    <td><%= link_to 'Edit', edit_nation_path(nation) %></td>
+    <td><%= link_to 'Destroy', nation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nation', new_nation_path %>

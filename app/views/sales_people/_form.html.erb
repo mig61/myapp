@@ -1,0 +1,21 @@
+<%= simple_form_for(@sales_person) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :zip %>
+    <%= f.input :city %>
+    <%= f.input :didtrict %>
+    <%= f.input :phone_number %>
+    <%= f.input :fax_number %>
+    <%= f.input :email_address %>
+    <%= f.input :skype %>
+    <%= f.association :region %>
+    <%= f.association :nation %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

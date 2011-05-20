@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @vat.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @vat.name %>
+</p>
+
+<p>
+  <b>Percentage:</b>
+  <%= @vat.percentage %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @vat.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_vat_path(@vat) %> |
+<%= link_to 'Back', vats_path %>

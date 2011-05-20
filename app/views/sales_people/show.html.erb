@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @sales_person.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @sales_person.address %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @sales_person.zip %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @sales_person.city %>
+</p>
+
+<p>
+  <b>Didtrict:</b>
+  <%= @sales_person.didtrict %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @sales_person.phone_number %>
+</p>
+
+<p>
+  <b>Fax number:</b>
+  <%= @sales_person.fax_number %>
+</p>
+
+<p>
+  <b>Email address:</b>
+  <%= @sales_person.email_address %>
+</p>
+
+<p>
+  <b>Skype:</b>
+  <%= @sales_person.skype %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%= @sales_person.region %>
+</p>
+
+<p>
+  <b>Nation:</b>
+  <%= @sales_person.nation %>
+</p>
+
+
+<%= link_to 'Edit', edit_sales_person_path(@sales_person) %> |
+<%= link_to 'Back', sales_people_path %>
